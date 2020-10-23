@@ -1,0 +1,129 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eu.mcuniverse</groupId>
+  <artifactId>FactionExtension</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>faction-repo</id>
+      <url>http://ci.ender.zone/plugin/repository/everything/</url>
+    </repository>
+    <repository>
+      <id>mcuniverse-reop</id>
+      <url>http://mcuniverse.eu/repository/</url>
+    </repository>
+    <!-- Dynmap -->
+    <!-- <repository> -->
+    <!-- <id>repo.mikeprimm.com</id> -->
+    <!-- <url>http://repo.mikeprimm.com/</url> -->
+    <!-- </repository> -->
+    <!-- <repository> -->
+    <!-- <id>dmulloy2-repo</id> -->
+    <!-- <url>https://repo.dmulloy2.net/nexus/repository/public/</url> -->
+    <!-- </repository> -->
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>eu.mcuniverse</groupId>
+      <artifactId>UniverseAPI</artifactId>
+      <version>0.0.3-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
+      <version>1.15.2-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.massivecraft</groupId>
+      <artifactId>Factions</artifactId>
+      <version>1.6.9.5-U0.5.10</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- <dependency> -->
+    <!-- <groupId>org.dynmap</groupId> -->
+    <!-- <artifactId>dynmap</artifactId> -->
+    <!-- <version>2.0</version> -->
+    <!-- <scope>provided</scope> -->
+    <!-- </dependency> -->
+    <dependency>
+      <groupId>com.comphenix.protocol</groupId>
+      <artifactId>ProtocolLib</artifactId>
+      <scope>provided</scope>
+      <version>4.5.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.12</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.2</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <phase>install</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>scp</executable>
+              <arguments>
+                <argument>${project.basedir}/target/${project.artifactId}-${project.version}-jar-with-dependencies.jar</argument>
+                <argument>user@134.255.235.22:/home/user/Server/Main/plugins/${project.artifactId}.jar</argument>
+<!--                 <argument>user@134.255.235.22:/home/user/Server/Factions/plugins/${project.artifactId}.jar</argument> -->
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+              </descriptorRefs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>

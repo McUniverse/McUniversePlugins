@@ -1,0 +1,25 @@
+name: Rocket
+version: 0.0.2
+author: JayReturns
+main: de.jayreturns.main.Main
+api-version: 1.13
+depend: [WorldEdit, Factions, PermissionsEx]
+
+commands:
+  rocketadmin:
+    description: Rocket main command
+    permission: rocket.admin
+    usage: /<command> <config/setoffset/setspawnoffset> <tier> <params (x,y,z)>
+  myrocket:
+    description: Open rocket GUI
+  weapon:
+    permission: weapon.main
+    description: Weapon command
+  rank:
+  fly:
+  chatclear:
+  cc:
+  day:
+  pvp:
+  umfrage:
+    

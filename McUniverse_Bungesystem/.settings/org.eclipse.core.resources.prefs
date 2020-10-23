@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/eu/mcuniverse/system/Bungee.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Ban.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Baninfo.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Broadcast.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Kick.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_List.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Team.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Tempban.java=UTF-8
+encoding//src/eu/mcuniverse/system/commands/CMD_Unban.java=UTF-8

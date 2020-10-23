@@ -1,0 +1,18 @@
+main: eu.mcuniverse.essentials.Core
+name: Essentials
+version: 0.0.1-SNAPSHOT
+author: JayReturns
+website: mcuniverse.eu
+LoadBefore: [UniverseAPI]
+Depend: [UniverseAPI]
+commands:
+  mute:
+    description: Mute someone
+    permission: mcuniverse.mute
+  invsee:
+    description: See into inventory of player
+    permission: mcuniverse.invsee
+  vanish:
+    description: Vanish for other players
+    permission: mcuniverse.vanish
+permissions: {}

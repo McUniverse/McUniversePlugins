@@ -1,0 +1,9 @@
+name: McUniverse_Grund
+author: VlogDev, JayReturns
+version: 1.0.0
+main: eu.mcuniverse.chat.main.main
+commands:
+  rank:
+  chatclear:
+  cc:
+  gm:

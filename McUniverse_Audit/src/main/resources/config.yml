@@ -1,0 +1,6 @@
+mysql:
+  host: localhost
+  username: user
+  password: password
+  database: audit
+  port: 3306

@@ -1,0 +1,14 @@
+name: Rocket
+version: 0.0.1-SNAPSHOST
+main: eu.mcuniverse.rocket.main.Core
+author: JayReturns
+api-version: 1.15
+depend: [ProtocolLib, UniverseAPI]
+
+commands:
+  rocketadmin:
+    permission: mcuniverse.rocket.admin
+    usage: /rocketadmin
+    description: Rocketadmin command
+    aliases: [ra]
+  

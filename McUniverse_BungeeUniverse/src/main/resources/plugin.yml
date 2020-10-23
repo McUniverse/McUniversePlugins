@@ -1,0 +1,5 @@
+name: BungeeUniverse
+main: eu.mcuniverse.bungeeuniverse.Core
+version: ${project.version}
+author: JayReturns
+depends: ["LuckPerms"]

@@ -1,0 +1,11 @@
+main: eu.mcuniverse.supplyrockets.Core
+name: SupplyRockets
+version: 0.0.1-SNAPSHOT
+description: SupplyRockets with custom chances
+author: JayReturns
+website: mcuniverse.eu
+depend:
+- UniverseAPI
+commands: 
+  summonmeteorite:
+api-version: '1.15'

@@ -1,0 +1,6 @@
+- /sethome + /home für alle
+	- Nicht in fremden factions
+- /f rocketlanding
+	- Landeplatz von Faction
+	- Pro planet 1 x /f sethome & 1 x /f setrocketlanding
+- Neu claimen auf Planet

@@ -1,0 +1,15 @@
+name: Anti
+version: 0.1
+author: JayReturns
+main: eu.mcuniverse.anti.Core
+depend: ["UniverseAPI"]
+loadbefore: ["UniverseAPI"]
+api-version: 1.15
+
+permissions:
+  mcuniverse.see:
+    description: See pl etc
+    default: op
+  mcuniverse.anti.enablekill:
+    description: Switch /kill @e status
+    default: false

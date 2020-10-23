@@ -1,0 +1,19 @@
+Smokegrenade, Grenade Texture
+Rocketlauncher: Smoke
+
+Grenade & Bomb stackable
+
+items: non stackable
+
+Rocketlauncher Reload 5sek, particle smoke, explosion on hit, dmg: 10 
+Glock: Graue partikel, 0.5s pause zws schuss, dmg: 6
+Scar ok
+Famas: 5er schüsse, Realoading 2.5s
+Shutdung: Align shoot, Reloading 4s, dmg: 5 per bullet
+mp5: ok
+sniper: ok
+LMG: schneller schießen, 50schuss, 5 schuss pro sekunde, dmg: 1
+Laser Rifle: lansgamer
+
+c4 + grenade: Damage: 15
+smoke: Damge: 0, SMoke

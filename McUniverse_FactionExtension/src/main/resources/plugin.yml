@@ -1,0 +1,13 @@
+name: FactionsExtension
+author: JayReturns
+version: 0.0.1-SNAPSHOST
+api-version: 1.15
+loadbefore: [ProtocolLib]
+depend: [Factions, UniverseAPI, ProtocolLib]
+main: eu.mcuniverse.factionextension.main.Core
+
+commands:
+  home:
+    description: Teleport to your home
+  sethome:
+    description: Set your home

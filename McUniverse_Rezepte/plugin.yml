@@ -1,0 +1,6 @@
+name: Recipes
+author: VlogDev
+version: 1.0.0
+main: eu.mcuniverse.recipes.main.main
+commands:
+ re:

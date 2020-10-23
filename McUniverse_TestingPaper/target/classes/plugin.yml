@@ -1,0 +1,5 @@
+name: TestingPaper
+version: 1.0
+main: eu.mcuniverse.testingpaper.main.Main
+author: JayReturns
+api-version: 1.15
